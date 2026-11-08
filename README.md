@@ -103,6 +103,7 @@ The suite uses an isolated temp `DATA_DIR`, mock stock/email servers, and covers
 
 ```bash
 docker build -t back-in-stock-alerts .
+mkdir -p data   # bind mounts must be writable by the container's UID 1000
 docker run -d --name bis \
   -p 3000:3000 \
   -v "$PWD/data:/data" \
