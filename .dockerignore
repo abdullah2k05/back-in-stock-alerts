@@ -1,0 +1,15 @@
+node_modules
+data
+test
+scripts
+.git
+.github
+.env
+.env.*
+*.log
+*.db
+*.db-*
+coverage
+.DS_Store
+README.md
+railway.json
